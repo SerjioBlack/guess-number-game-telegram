@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -27,7 +26,7 @@ app.post('/guess', (req, res) => {
     res.json({ message: 'The secret number is lower.' });
   } else {
     res.json({ message: 'Congratulations! You guessed the number!' });
-    secretNumber = null; // Скинути гру
+    secretNumber = null; 
   }
 });
 
