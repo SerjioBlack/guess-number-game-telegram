@@ -1,4 +1,3 @@
-// src/GuessForm.js
 import React, { useState } from 'react';
 
 function GuessForm({ onGuess }) {
