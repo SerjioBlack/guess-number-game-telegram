@@ -39,7 +39,7 @@ First, clone this repository to your local machine:
 git clone https://github.com/yourusername/guess-number-game-bot.git
 cd guess-number-game-bot
 
-Setup the Environment
+## Setup the Environment
 Create a .env file in the root directory of the project and add your Telegram bot token:
 
 TELEGRAM_BOT_TOKEN=your-telegram-bot-token
