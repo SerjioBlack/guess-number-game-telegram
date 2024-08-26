@@ -35,8 +35,7 @@ Before you start, make sure you have the following:
 
 First, clone this repository to your local machine:
 
-
-git clone https://github.com/yourusername/guess-number-game-bot.git
+git clone https://github.com/SerjioBlack/guess-number-game-telegram
 cd guess-number-game-bot
 
 ## Setup the Environment
