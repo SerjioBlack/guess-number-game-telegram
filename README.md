@@ -35,7 +35,7 @@ Before you start, make sure you have the following:
 
 First, clone this repository to your local machine:
 
-```bash
+
 git clone https://github.com/yourusername/guess-number-game-bot.git
 cd guess-number-game-bot
 
@@ -46,7 +46,7 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 
 Replace your-telegram-bot-token with the token you get from BotFather (details in Telegram Bot Setup).
 
-Backend Deployment (Vercel)
+## Backend Deployment (Vercel)
 Deploying to Vercel
 Create a Vercel account: Go to Vercel and sign up.
 
@@ -64,7 +64,9 @@ Click "Deploy" to start the deployment process. Vercel will automatically detect
 Get the Production URL:
 
 Once deployed, note down the production URL provided by Vercel (e.g., https://your-backend.vercel.app).
-Frontend Deployment (Netlify)
+
+
+## Frontend Deployment (Netlify)
 Deploying to Netlify
 Create a Netlify account: Go to Netlify and sign up.
 
@@ -82,7 +84,8 @@ Click "Deploy site" to start the deployment process.
 Get the Production URL:
 
 Once the site is deployed, note down the URL provided by Netlify (e.g., https://your-frontend.netlify.app).
-Telegram Bot Setup
+
+## Telegram Bot Setup
 Create a New Bot with BotFather
 Open BotFather in Telegram:
 
@@ -96,7 +99,9 @@ BotFather will give you a token. Save this token in your .env file under TELEGRA
 Set Web App Domain
 Set your Web App domain:
 Use the command /setdomain in BotFather and provide the URL of your frontend hosted on Netlify (e.g., https://your-frontend.netlify.app).
-Final Steps
+
+
+## Final Steps
 Update the Backend URL in Frontend:
 
 Go to your frontend code and replace the local backend URL (e.g., http://localhost:3001) with the production URL provided by Vercel.
