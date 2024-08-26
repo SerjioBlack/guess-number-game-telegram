@@ -1,13 +1,11 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import GuessForm from './GuessForm';
 import './styles.css';
 
 function App() {
   const [result, setResult] = useState('');
-  const [gameId, setGameId] = useState(null); // Идентификатор игры (если нужен)
+  const [gameId, setGameId] = useState(null); 
 
-  // Функция для запуска новой игры
   const startNewGame = () => {
     fetch('http://localhost:3001/start_game', {
       method: 'POST',
@@ -15,13 +13,12 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.message);
-        setGameId(data.gameId || null); // Если сервер возвращает идентификатор игры
-        setResult(''); // Очистка результата
+        setGameId(data.gameId || null); 
+        setResult(''); 
       })
       .catch((error) => console.error('Error starting the game:', error));
   };
 
-  // Запуск игры при загрузке компонента
   useEffect(() => {
     startNewGame();
   }, []);
@@ -40,11 +37,10 @@ function App() {
         const data = await response.json();
         setResult(data.message);
 
-        // Если угадали число, начнем новую игру
         if (data.message.includes('You guessed the number')) {
           setTimeout(() => {
             startNewGame();
-          }, 2000); // Задержка в 2 секунды перед перезапуском игры
+          }, 2000);
         }
       } else {
         const errorData = await response.json();
